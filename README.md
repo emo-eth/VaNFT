@@ -4,9 +4,9 @@ Proof-of-concept for minting an entire block as an NFT by consuming enough gas t
 
 - Must specify the block number to mint
   - Fails fast if the block number is invalid
-- Checks remaining gas against the gas limit
-  - Fails fast if the gas limit is too low
-- Fine-tuned for EOAs – will not be possible to mint from a contract
+- Checks remaining gas against the block gas limit
+  - Fails fast if the remaining gas is too low
+  - Fine-tuned for EOAs – will not be possible to mint from a contract
 
 After mint, gas is burned until there is < 21,000 gas remaining, which is the minimum gas required to send Ether from one EOA to another (the cheapest possible transaction).
 
