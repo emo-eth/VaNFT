@@ -6,7 +6,6 @@ remappings = [
     'solady/=lib/solady/src',
     'forge-gas-metering/=lib/forge-gas-metering/src/',
 ]
-gas_limit = 30_000_000
-optimizer = false
+optimizer_runs = 9_999_999
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
