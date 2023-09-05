@@ -12,7 +12,7 @@ After mint, gas is burned until there is < 21,000 gas remaining, which is the mi
 
 # Testing
 
-Testing is difficult, since the EVM only forwards 63/64 remaining gas, and Forge tests execute in the EVM with their own gas limit.
+Testing is difficult, since the EVM only forwards 63/64 remaining gas, and Forge tests execute in an EVM with their own gas limit.
 
 To test, start a local Anvil network.
 
